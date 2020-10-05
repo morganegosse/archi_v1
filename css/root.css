@@ -1,0 +1,18 @@
+@charset "UTF-8"; /* Définit l'encodage de la feuille de style à Unicode UTF-8 */
+*{ padding:0;margin:0;box-sizing:border-box;outline:none;}
+
+:root{
+	/**/
+--color_1:rgba(204,213,0,1);
+--color_2:rgba(37,37,37,1);
+--color_3:rgba(37,37,37,0.75);
+--width_admin:270px;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

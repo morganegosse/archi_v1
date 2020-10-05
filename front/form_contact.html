@@ -1,0 +1,15 @@
+<form action="front.php" method="post">
+    <?php if(isset($message['nom_contact'])){echo $message['nom_contact'];} ?>
+    <input <?php if(isset($color['nom_contact'])) {echo $color['nom_contact'];} ?>type="text" name="nom_contact" value="<?php if(isset($_POST['nom_contact'])){echo $_POST['nom_contact'];} ?>" placeholder="Mets ton nom" />
+
+    
+    <?php if(isset($message['prenom_contact'])){echo $message['prenom_contact'];} ?>				
+    <input <?php if(isset($color['prenom_contact'])) {echo $color['prenom_contact'];} ?>type="text" name="prenom_contact" value="<?php if(isset($_POST['prenom_contact'])){echo $_POST['prenom_contact'];} ?>" placeholder="Mets ton prénom" />
+
+    <?php if(isset($message['mel_contact'])){echo $message['mel_contact'];} ?>
+    <input <?php if(isset($color['mel_contact'])) {echo $color['mel_contact'];} ?>type="email" name="mel_contact" value="<?php if(isset($_POST['mel_contact'])){echo $_POST['mel_contact'];} ?>" placeholder="Mets ton email" />	
+
+    <?php if(isset($message['message_contact'])){echo $message['message_contact'];} ?>
+    <textarea <?php if(isset($color['message_contact'])) {echo $color['message_contact'];} ?>name="message_contact" placeholder="Message (max : 250 c)" maxlength="250"><?php if(isset($_POST['message_contact'])){echo $_POST['message_contact'];} ?></textarea>
+    <input type="submit" class="cta cta_vert" name="submit" value="ENVOYER" />
+</form>

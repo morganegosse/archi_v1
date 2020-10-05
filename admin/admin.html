@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Back office</title>
+<link href="../css/root.css" rel="stylesheet" type="text/css" />
+<link href="../css/back.css" rel="stylesheet" type="text/css" />
+<link href="../css/dashicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<aside id="zone_gauche">
+		<nav id="menu_back">
+			<ul>
+				<li><a href="admin.php">HOME</a></li>
+				<li><a href="admin.php?action=comptes">GESTION DES COMPTES</a></li>
+				<li><a href="admin.php?action=actus">GESTION DES ACTUS</a></li>
+				<li><a href="admin.php?action=slider">GESTION DU SLIDER</a></li>
+				<li><a href="admin.php?action=messagerie">MESSAGERIE<?php if(isset($notification)) {echo $notification;} ?></a></li>				
+			</ul>
+		</nav>
+	</aside>
+	<main id="zone_droite">
+		<header id="header_back">
+			<h1>Bienvenue sur le back</h1>
+			<a href="#"><span class="dashicons dashicons-no"></span></a>
+		</header>
+		<section id="contenu_back">
+			<?php
+			if(isset($contenu))
+				{
+				include($contenu);
+				}
+			?>
+		</section>
+		<footer id="footer_back"></footer>
+	</main>
+</body>
+</html>
