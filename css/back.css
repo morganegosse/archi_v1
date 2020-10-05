@@ -143,12 +143,16 @@ body{
 .notif{
 	position: absolute;
 	z-index: 2;
-	top: 25;
+	top: 25%;
 	right: 10px;
 	background-color: red;
+	width: 20px;
+	height: 25px;
 	border-radius: 50%;
 	color: #fff;
-	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 12px;
 
 }
